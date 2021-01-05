@@ -3,22 +3,18 @@
   padding-top: 60px;
   padding-bottom: 60px;
   color: #ffffff;
-
-  &__container {
-    display: flex;
-    align-items: baseline;
-  }
+  text-align: center;
 
   &__logo {
     color: #ffffff;
   }
 
-  &__footer:first-child {
-    margin-left: 70px;
+  &__contacts {
+    margin-bottom: 60px;
   }
 
-  &__contacts {
-    margin-right: 70px;
+  &__social {
+    margin-bottom: 60px;
   }
 
   &__call {
@@ -31,6 +27,11 @@
     text-transform: uppercase;
 
     color: #ffffff;
+  }
+  &__button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -58,20 +59,12 @@
   color: #ffffff;
 }
 
-.footer__form {
-  display: flex;
-}
-
-.footer__sub {
-  margin-left: auto;
-}
-
 .footer__input {
-  width: 358px;
+  width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
-  margin-right: 12px;
+  margin-bottom: 20px;
 
   color: #ffffff;
 
@@ -88,11 +81,52 @@
   }
 }
 
-.footer__button {
-  @extend %flex;
-}
-
 .button__icon {
   margin-left: 10px;
   fill: #ffffff;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+  }
+  .footer__contacts {
+    margin-right: 165px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: flex;
+    text-align: left;
+  }
+
+  .footer__contacts {
+    margin-bottom: 0;
+  }
+
+  .footer__social {
+    margin-bottom: 0;
+  }
+
+  .footer__contacts {
+    margin-right: 70px;
+  }
+
+  .footer__sub {
+    margin-left: auto;
+  }
+
+  .footer__form {
+    display: flex;
+    align-items: start;
+  }
+
+  .footer__input {
+    width: 358px;
+    margin-right: 12px;
+  }
 }

@@ -1,8 +1,15 @@
+.works {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
 .works-list {
   display: flex;
   justify-content: space-between;
 
   &__item {
+    flex-basis: calc(100% / 3 - 20px);
     position: relative;
   }
 
