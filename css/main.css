@@ -439,6 +439,7 @@ img {
 @media screen and (min-width: 1200px) {
   .hero {
     height: 600px;
+    max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/desktop/hero-1600.jpg);
@@ -834,6 +835,9 @@ img {
     display: -ms-flexbox;
     display: flex;
     text-align: left;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
   .footer__contacts {
     margin-bottom: 0;
